@@ -8,7 +8,7 @@ export default class extends React.Component {
                     <Hallo />
                 </section>
                 <section id="section">pimpam</section> 
-                <h1>Test</h1>
+                <h1>Hallo</h1>
 
                 
                 <style jsx>{`
