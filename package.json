@@ -2,7 +2,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "npm run build && next export"
   },
   "name": "lenkerholz",
   "description": "A static scrollytelling page about \"Lenker Holz\" based on React",
