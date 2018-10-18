@@ -1,7 +1,31 @@
 {
-    "scripts": {
-      "dev": "next",
-      "build": "next build",
-      "start": "next start"
-    }
-  }
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "name": "lenkerholz",
+  "description": "A static scrollytelling page about \"Lenker Holz\" based on React",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^7.0.2",
+    "react-dom": "^16.5.2",
+    "react": "^16.5.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pscllbssr/lenkerholz.git"
+  },
+  "keywords": [
+    "storytelling",
+    "scrollytelling"
+  ],
+  "author": "pascal albisser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pscllbssr/lenkerholz/issues"
+  },
+  "homepage": "https://github.com/pscllbssr/lenkerholz#readme"
+}
