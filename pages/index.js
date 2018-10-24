@@ -1,25 +1,18 @@
 import Hallo from '../components/HelloWorld'
+import Header from '../views/Header'
+import Section from '../views/Section'
+
+import 'normalize.css'
+import './index.css'
 
 export default class extends React.Component {
     render(){
         return (
             <div id="app">
-                <section id="start">Welcome to Lenker Holz
-                    <Hallo />
-                </section>
-                <section id="section">pimpam</section> 
-                <h1>Hallo</h1>
-
-                
-                <style jsx>{`
-                section {
-                  color: blue;
-                }
-              `}</style>              
-                
-            </div>
-
-           
+                <Header />
+                <Section />
+                <Section />
+            </div>           
         );
     }
 }
