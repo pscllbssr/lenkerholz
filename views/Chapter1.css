@@ -1,0 +1,8 @@
+.chapter-1{
+    background: #b4ded4;
+}
+.chapter-1 .animation.fixed{
+    bottom: 0;
+    position: fixed;
+}
+

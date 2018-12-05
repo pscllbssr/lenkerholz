@@ -1,0 +1,32 @@
+.section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chapter{
+    min-height: 100vh;
+    align-items: start;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 8fr 5fr;
+}
+
+.chapter .text{
+    padding: 30px;
+}
+
+.hidden{
+    background: red;
+    -webkit-transition: background 1s ease-in-out;
+    -moz-transition: background 1s ease-in-out; 
+    transition: background 1s ease-in-out;
+}
+
+.text-content{
+    max-width: 800px;
+}
+
+.tween{
+}
