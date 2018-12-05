@@ -61,16 +61,25 @@ export default class extends React.Component {
                 <h2>Ökologie</h2>
                 
                 <h3>Weniger Treibhausgase</h3>
-                Der Wald ist CO2 – bindend. Wir ein Baum für Energie- oder Wärmegewinnung verbrannt, gibt er nur so viel vom Treibhausgas wieder frei, wie er gespeichert hatte. Die Herstellung von Holzprodukten verbraucht viel weniger Energie, als jene anderer Baustoffe. Durch diese Energieeffizienz sinkt der Ausstoss von Treibhausgasen erheblich. Bei lokal geschlagenem Holz sind die Transportwege erheblich kürzer. Der Ausstoss von CO2 wird durch diese Tatsache um ein grosses Mass verringert.
-
+                Der Transport von Holz erzeugt, je nach Transportweg, einen grossen Teil des ausgestossenen Treibhausgases der Holzproduktion. Bei lokal geschlagenem Holz sind die Transportwege aufs Minimum reduziert. <br></br><br></br>
+                Während der Lebenszeit eines Baumes bindet dieser CO2. Wird ein Baum für Energie- oder Wärmegewinnung verbrannt, gibt er nur so viel des Treibhausgases wieder frei, wie er während seiner Lebenszeit gespeichert hatte. Somit kann Holz als CO2-neutrale Alternative zu Kohle, Öl und Gas verwendet werden. <br></br><br></br>
+                Die Herstellung von Holzprodukten verbraucht viel weniger Energie, als jene anderer Baustoffe wie z.B. Beton. Durch diese Energieeffizienz sinkt der Ausstoss von Treibhausgasen erheblich. 
+                    
+                
 
                 <h3>Mehrere Leben</h3>
                 Holz- und Holzprodukte sind vielseitig einsetzbar im ganzen Lebenszyklus
-                -        Zurückgewonnene Bauteile aus Holz lassen sich direkt wiederverwenden
-                -        Durch Verbrennung kann Wärme und Energie erzeugt werden
-                -        Der Kreislauf der Natur schliesst sich durch die Verbrennung wieder
-                
-                
+                <ul>
+                        <li>                        
+                            Zurückgewonnene Bauteile aus Holz lassen sich direkt wiederverwenden
+                        </li>                                
+                        <li>                        
+                            Durch Verbrennung kann Wärme und Energie erzeugt werden
+                        </li>                                                                
+                        <li>                        
+                            Der Kreislauf der Natur schliesst sich durch die Verbrennung wieder
+                        </li>
+                </ul>
                 Holz ist ein Naturprodukt und kennt keinen Abfall. Wer Schweizer Holz verwendet, trägt dazu bei, dass der Wald fit und stabil bleibt.
 
             </div> 

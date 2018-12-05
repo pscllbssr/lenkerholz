@@ -60,16 +60,18 @@ export default class extends React.Component {
             <div className="text">
 
                 <h2>Investition in die lokale Wirtschaft</h2>
+                    
+                <h3>Forstwirtschaft</h3>
+                Die Bäume werden durch genaue Untersuchung gekennzeichnet und durch speziell ausgebildetes Personal geschlagen. Das ist nur einer der Gründe, warum die einheimische Waldwirtschaft vor grossen Herausforderungen steht. Die Wettbewerbsfähigkeit ist durch den grossen Mehraufwand schwierig zu gewährleisten. Durch die heimische Forstwirtschaft sind zahlreiche Stellen sichergestellt. 
+ 
+                <h3>Holztransport</h3>
+                Das Holz in der Lenk wird unter anderem mittels Seilkran oder Hubschrauber die vielen Schluchten hinunter transportiert. Weiter werden die frisch geschlagenen Stämme von hiesigen Transportunternehmen in verschiedene Sägereien geliefert. Durch diesen Kreislauf der Holzwirtschaft von Forstwirtschaft, Transportunternehmen und Sägereien werden weitere Stellen erhalten.
 
-                Das Holz in der Lenk wir unter anderem mittels Seilkran oder Hubschrauber die vielen Schluchten hinunter transportiert. Das ist nur einer der Gründe, warum die einheimische Waldwirtschaft vor grossen Herausforderungen steht. Die Wettbewerbsfähigkeit ist durch den grossen Mehraufwand schwierig zu gewährleisten.
- 
-                In vielen verschiedenen Gebieten der lokalen Holzwirtschaft werden durch die Nutzung von Lenker Holz Arbeitsplätze gesichert.
- 
-                -        Pflege des Waldes
-                -        Forstwirtschaft
-                -        Holztransport
-                -        Holzverarbeitung
-                -        Holzbau
+                <h3>Holzverarbietung</h3>
+                Sägereien arbeiten Hand in Hand mit den Transportunternehmen. Die frisch geschlagenen Stämme werden dort zu unterschiedlichsten Holz-Variationen verarbeitet. Später werden sie an verschiedene Zimmereien, Schreinereibetriebe und Möbelfirmen rund um den Raum Adelboden - Lenk geliefert.
+
+                <h3>Holzbau</h3>
+                Die gelieferten Güter aus Holz finden die unterschiedlichsten Anwendungsformen. Zimmereien bauen daraus elegante Chalets, Schreiner fertigen aus dem Lenker Holz angenehme, heimelige Böden und stilvolle Türen. Zudem werden aus dem heimischen Hölzern exklusive Möbel hergestellt. Somit kann in einer Stube zu Hause mit gutem Gewissen ein Holzmöbel aus der Lenk aufgestellt werden.   
 
             </div>
                     

@@ -39,22 +39,24 @@ export default class extends React.Component {
                     <div className="text">
                         <h2>Waldpflege</h2>
                         <h3>Der Wald nimmt eine Schutzfunktion ein</h3>
-                        Beinahe 90% der Waldfläche der Gemeinde Lenk ist als Schutzwald beschrieben und benötigt eine nachhaltige, intensive Pflege.
-                        Davon sind
-                        1331ha Gerinneschutzwald (65% der Gesamtwaldfläche)
-                        559ha   Lawinenschutzwald (27%)
-                        112ha	Hangmurenschutzwald (5%)
-                        50ha  	Steinschlagschutzwald (2.5%)
-                        3ha    	Rutschschutzwald (0.15%)
+                        Beinahe 90% der Waldfläche der Gemeinde Lenk ist als Schutzwald beschrieben und benötigt eine nachhaltige, intensive Pflege. <br></br>
+                        Davon sind:
+                  
+                        <ul>
+                            <li>1331ha Gerinneschutzwald (65% der Gesamtwaldfläche)       </li>
+                            <li>559ha   Lawinenschutzwald (27%)</li>
+                            <li>112ha	Hangmurenschutzwald (5%)</li>
+                            <li>50ha  	Steinschlagschutzwald (2.5%)</li>
+                            <li>3ha    	Rutschschutzwald (0.15%)</li>
+                        </ul>
+                        
                          
-                        <h3>Zweite Folie</h3>
-                        Lebensraum für Tiere und Pflanzen
-                        Der Wald übernimmt nebst Schutzfunktionen auch Nutz- und Wohlfartsfunktionen. Weiter ist der Wald auch Lebensraum für Pflanzen und Tiere und ein natürlicher Filter für Wasser und Luft. Diese drei Waldfunktionen sind im Waldgesetz erwähnt.
+                        <h3>Wohlfahrts- und Nutzfunktion</h3>
+                        Neben seiner Schutzfunktion dient der Wald auch als Lebensraum für zahlreiche einheimische Tiere und Pflanzen. Er bildet eine naturnahe Lebensgemeinschaft und bietet ein natürliches Erholungsgebiet. Durch das filtern von Luft und Wasser übernimmt der Wald auch eine wichtige Nutzfunktion.
+                        
                          
-                        <h3>Dritte Folie</h3>
-                        Eine aktive Bewirtschaftung wird benötigt
-                        Damit der Wald die von ihm erwarteten Leistungen erbringen kann, ist eine aktive Bewirtschaftung und Pflege erforderlich. Die Entscheidung für Lenker Holz hilft mit, diese Leistungen zu ermöglichen. In der Lenk wächst mehr Holz nach, als Waldbesitzer nutzen.
-
+                        <h3>Eine aktive Bewirtschaftung wird benötigt</h3>
+                        Damit der Wald diese Funktionen erbringen kann, ist eine aktive Bewirtschaftung und Pflege erforderlich. Diese stellt sichergestellt, dass der Wald in seiner Fläche und in seiner räumlichen Verteilung erhalten bleibt. Durch die gezielte Holzung wird eine Überalterung sowie eine Erkrankung des Waldes verhindert. In der Lenk wird grossen Wert auf die nachhaltige Bewirtschaftung gelegt; es wird nie mehr Holz verabeitet, als nachwächst.
                     </div>
                                         
             </section>           
