@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d2db811-e61a-439c-82f4-9c78e7bc0f9c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/chopper.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/header-background.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/3_Code.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/chapter1/Chapter1.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/Backup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/Chapter.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/Chapter1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/Chapter1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/Chapter2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/Chapter3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/Contact.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/Example.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/Summary.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/Summary.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/Section.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/Section.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/index.css" afterPath="$PROJECT_DIR$/pages/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/index.js" afterPath="$PROJECT_DIR$/pages/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Header.css" afterPath="$PROJECT_DIR$/views/Header.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/Header.js" afterPath="$PROJECT_DIR$/views/Header.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -230,7 +205,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543997380250</updated>
-      <workItem from="1543997381536" duration="2194000" />
+      <workItem from="1543997381536" duration="2339000" />
     </task>
     <task id="LOCAL-00001" summary="change commmit">
       <created>1543999660130</created>
@@ -239,11 +214,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543999660130</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="divided in chapters and added first svg">
+      <created>1543999795750</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1543999795750</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2194000" />
+    <option name="totallyTimeSpent" value="2339000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -276,7 +258,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change commmit" />
-    <option name="LAST_COMMIT_MESSAGE" value="change commmit" />
+    <MESSAGE value="divided in chapters and added first svg" />
+    <option name="LAST_COMMIT_MESSAGE" value="divided in chapters and added first svg" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
