@@ -63,3 +63,5 @@ typings/
 
 # next.js static build output
 out/
+
+.idea/
