@@ -1,3 +1,5 @@
+import './Scene11.css';
+
 export default class extends React.Component {
 
     constructor(props) {
@@ -9,7 +11,10 @@ export default class extends React.Component {
         return (
             <div id={this.props.id} className='scene' style={{background: '#b4ded4'}}>
                 <object type="image/svg+xml" data="/static/chapter1/Forest03.svg"
-                        className='scene__background'>Your browser does not support
+                        className='scene__background'>Your browser does not support SVGs
+                </object>
+                <object type="image/svg+xml" data="/static/chapter1/Bird.svg" width="42" height="21" id='bird'
+                        className=''>Your browser does not support
                     SVGs
                 </object>
                 <div className="text">
