@@ -9,6 +9,7 @@
     left: 0;
     right: 0;
     z-index: 99;
+    background: #b4ded4;
 }
 
 .full-screen .animation{
