@@ -29,14 +29,14 @@ export default [
         element: (progress) => {
             return <Scene10 id="scene10" key='scene10' progress={progress} />
         }
-    },
+    },/*
     {
         style: {top: '230vh'},
         id: 'bird',
         element: (progress) => {
             return <Bird id="bird" key='bird' progress={progress} />
         }
-    },
+    },*/
     {
         style: {top: '299vh'},
         id: 'scene11',
