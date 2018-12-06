@@ -57,11 +57,31 @@ export default [
     },   
     {
         style: {top: '899vh'},
+        id: 'scene30',
+        element: <Scene30 id="scene30" />
+    }, 
+    {
+        style: {top: '999vh'},
+        id: 'scene31scene31',
+        element: <Scene31 id="scene31scene31" />
+    }, 
+    {
+        style: {top: '1099vh'},
+        id: 'scene32',
+        element: <Scene32 id="scene32" />
+    }, 
+    {
+        style: {top: '1199vh'},
+        id: 'scene33',
+        element: <Scene33 id="scene33" />
+    }, 
+    {
+        style: {top: '1299vh'},
         id: 'scene98',
         element: <Summary id="scene98" />
     },
     {
-        style: {top: '999vh'},
+        style: {top: '1399vh'},
         id: 'scene99',
         element: <Contact id="scene99" />
     }
