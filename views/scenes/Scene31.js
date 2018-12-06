@@ -8,7 +8,7 @@ export default class extends React.Component {
 
         return (
             <div id={this.props.id} className='scene'>
-                <object type="image/svg+xml" data="/static/chapter2/Life02.svg"
+                <object type="image/svg+xml" data="/static/chapter3/Life02.svg"
                         className='scene__background'>Your browser does not support SVGs
                 </object>
                 <div className="text">
