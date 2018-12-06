@@ -17,7 +17,7 @@ export default class extends React.Component {
         this.setState({
           visible: true,
         });
-      }
+    }
      
       onExitViewport() {
         this.setState({

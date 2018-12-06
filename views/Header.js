@@ -1,18 +1,23 @@
-import './Header.css'
-import { Controller, Scene } from 'react-scrollmagic';
-import { Tween, Timeline } from 'react-gsap';
-
 export default class extends React.Component {
+
+    constructor(props){
+        super(props)
+    }
+
     render(){
+
         return (
-            <header id="header">
-                <div className="content-wrapper">
+            <div id={this.props.id} className='scene' style={{background: '#b4ded4'}}>
+                <object type="image/svg+xml" data="/static/chapter1/Chapter1_.svg"
+                        className='scene__background'>
+                    Your browser does not support SVGs
+                </object>
+                <div>{this.props.progress}</div>
+                <div className="text">
                     <h1>Lenker Holz</h1>
-                    <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    </p>
                 </div>
-            </header>           
+
+            </div>
         );
     }
 }

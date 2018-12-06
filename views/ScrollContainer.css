@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+.full-screen{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.full-screen .animation{
+    width: 100%;
+}
+
+.full-screen .text{
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 31.5vw;
+    padding: 2em;
+}
+
+.progress{
+    position: fixed;
+    left:0;
+    top:0;
+    background: white;
+    z-index: 998;
+    height: 5px;
+}

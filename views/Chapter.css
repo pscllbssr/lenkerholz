@@ -10,7 +10,7 @@
     align-items: start;
     justify-content: center;
     display: grid;
-    grid-template-columns: 8fr 5fr;
+    grid-template-columns: 61.5vw 1fr;
 }
 
 .chapter .text{
@@ -28,5 +28,37 @@
     max-width: 800px;
 }
 
-.tween{
+.scene{
+    height: 100vh;
+    align-items: flex-end;
+    display: flex;
+    width: 61.5vw;
+}
+.scene.sticky{
+    position: relative;
+    top: 20px;
+}
+
+.scene.after{
+
+}
+
+.scene div, .scene object{
+    width: 100%;
+}
+
+.text{
+    position: relative;
+}
+.text div{
+    min-height: 100vh;
+}
+
+.scene-start{
+    position: absolute;
+    top:0;
+}
+.scene-end{
+    position: absolute;
+    bottom: 0;
 }

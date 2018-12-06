@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+.full-screen{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: aliceblue;
+    opacity: .75;
+}
+
+.full-screen .animation{
+    width: 100%;
+}
+
+.full-screen .text{
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 31.5vw;
+    padding: 2em;
+}
+
+.timeline{
+    min-height: 1000vh;
+}
+
+.trigger{
+    height: 100vh;
+
+}
+.trigger1,.trigger3, .trigger5{background: green}
