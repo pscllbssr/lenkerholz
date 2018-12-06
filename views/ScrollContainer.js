@@ -62,7 +62,7 @@ export default class extends React.Component {
         );
 
         let scenarios = this.props.scenes.map((scene) =>
-            scene.element
+            scene.element(this.state.progress)
         );
 
         return (

@@ -15,6 +15,7 @@ export default class extends React.Component {
                 <div>{this.props.progress}</div>
                 <div className="text">
                     <h1>Lenker Holz</h1>
+                    <p>{this.props.progress}</p>
                 </div>
 
             </div>
