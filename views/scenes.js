@@ -61,37 +61,48 @@ export default [
     {
         style: {top: '599vh'},
         id: 'scene21',
-        element: <Scene21 id="scene21" />
+        element: (progress) => {
+            return <Scene21 id="scene21" progress={progress}/>
+        }
     },   
     {
         style: {top: '699vh'},
         id: 'scene22',
-        element: <Scene22 id="scene22" />
+        element: (progress) => {
+            return <Scene22 id="scene22" progress={progress} />
+        }
     },   
     {
         style: {top: '799vh'},
         id: 'scene23',
-        element: <Scene23 id="scene23" />
+        element: (progress) => {
+            return <Scene23 id="scene23" progress={progress}/>
+        }
     },   
     {
         style: {top: '899vh'},
         id: 'scene30',
-        element: <Scene30 id="scene30" />
+        element: (progress) => {
+            return <Scene30 id="scene30" progress={progress} /> }
     }, 
     {
         style: {top: '999vh'},
         id: 'scene31scene31',
-        element: <Scene31 id="scene31scene31" />
+        element: (progress) => {
+            return <Scene31 id="scene31scene31" progress={progress} />
+        }
     }, 
     {
         style: {top: '1099vh'},
         id: 'scene32',
-        element: <Scene32 id="scene32" />
+        element: (progress) => {
+            return <Scene32 id="scene32" progress={progress} />
+        }
     }, 
     {
         style: {top: '1199vh'},
         id: 'scene33',
-        element: <Scene33 id="scene33" />
+        element: (progress) => { return <Scene33 id="scene33" progress={progress} /> }
     }, 
     {
         style: {top: '1299vh'},
