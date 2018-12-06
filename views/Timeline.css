@@ -24,13 +24,13 @@
 
 .trigger {
     height: 100vh;
-    margin-bottom: 50px;
 
     position: relative;
-
 }
 
 .trigger > div {
     background: green;
-    height: 50px;
+    height: 0;
+    border-top: 1px solid;
+    border-left: 1px solid;
 }
