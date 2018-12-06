@@ -1,62 +1,158 @@
 import './Chapter.css'
+import './Chapter2.css'
 import ScrollTrigger from 'react-scroll-trigger';
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
 
 
+
 export default class extends React.Component {
 
-    constructor(props){
-
-        super(props)
-        this.state = { visible: false }
+    constructor(props) {
+        super(props);
+        this.state = {visible: false, sticky:false, after: false, offset: 0};
+        this.someRefName = React.createRef();
+        this.width = 0;
+        this.svg = null;
     }
 
-    onEnterViewport() {
+    startScene() {
+        console.log('start scene');
         this.setState({
-          visible: true,
+            visible: true,
         });
-      }
-     
-      onExitViewport() {
-        this.setState({
-          visible: false,
-        });
-      }
+    }
 
-    render(){
+    stopScene() {
+        console.log('stop scene');
+
+    }
+
+    startSticky() {
+        /*
+        console.log('start sticky');
+        this.setState({
+            sticky: true,
+        });*/
+    }
+
+    stopSticky() {
+        console.log('stop sticky');
+        this.setState({
+            stickyBottom: false,
+        });
+    }
+
+    toggleSticky(){
+        /*
+        this.setState({
+            sticky: !this.state.sticky,
+        });*/
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll.bind(this));
+        this.width = this.someRefName.current.getBoundingClientRect().width;
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll.bind(this));
+    }
+
+    handleScroll(event){
+
+        if(this.someRefName.current !== null){
+            let rect = this.someRefName.current.getBoundingClientRect();
+
+            if(rect.y < 0 && (rect.y + rect.height) > window.innerHeight){
+                console.log('sticky');
+
+                this.setState({
+                    sticky: true
+                });
+
+                //console.log(this.state.sticky);
+
+                //console.log(rect.y*-1);
+                //console.log(rect.height);
+                let offset = (rect.y*-1)-rect.height;
+
+            }else if((rect.y + rect.height) < window.innerHeight){
+                // after
+
+                let offset = 0;
+
+                this.setState({
+                    sticky:false,
+                    after: true,
+                    offset: offset
+                })
+            }
+            else{
+                // before
+
+                this.setState({
+                    sticky: false,
+                    after: false
+                });
+            }
+        }
+    }
+
+    animateBird(){
+        /*
+        this.svg.select(".cls-71")
+            .animate({ transform: 'r360,150,150s1.3' }, 1000, mina.bounce );*/
+    }
+
+    render() {
 
         const {
             visible,
-          } = this.state;
+        } = this.state;
+
+        let sceneClassName = 'scene';
+        let sceneStyle = {};
+        if (this.state.sticky) {
+            sceneClassName += ' sticky';
+            sceneStyle = {position: 'fixed', top: 0};
+        }else if(this.state.after){
+            sceneClassName += ' after';
+            sceneStyle = {position: 'fixed', top: this.state.offset}
+        }
+
+        //let sceneStyle = {top: this.state.offset};
 
         return (
-            <section className="chapter chapter-2">
-                                <div className="animation">
-                                <ScrollTrigger onEnter={this.onEnterViewport.bind(this)} onExit={this.onExitViewport.bind(this)} triggerOnLoad={false}>
-                        <div className={`content-wrapper ${visible ? 'animated rubberBand' : ''}`}>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
-                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo 
-                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
-                            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                            <ul>
-                                <li>                        
-                                    <a href="http://makeyourmoneymatter.org/">http://makeyourmoneymatter.org/</a>
-                                </li>                                
-                                <li>                        
-                                    <a href="https://codepen.io/zjun/pen/dGPqzQ">https://codepen.io/zjun/pen/dGPqzQ</a>
-                                </li>                                                                
-                                <li>                        
-                                    <a href="http://www.nytimes.com/projects/2013/tomato-can-blues/index.html">http://www.nytimes.com/projects/2013/tomato-can-blues/index.html</a>
-                                </li>
-                            </ul>
-
-                            
+            <section className="chapter chapter-2" ref={this.someRefName}>
+                <div className="animation">
+                    <Controller>
+                        <Scene
+                            triggerElement=".chapter-2-scene-end"
+                            duration={1000}>
+                            {(progress) => (
+                                <Tween
+                                    from={{
+                                        top: '0px'
+                                    }}
+                                    to={{
+                                        top: '-100vh'
+                                    }}
+                                    ease="Strong.easeOut"
+                                    totalProgress={progress}
+                                    paused
+                                >
+                    <div className={sceneClassName + '  tween'} style={sceneStyle}>
+                        <div>
+                            <object type="image/svg+xml" data="/static/chapter2/Chapter2.svg" id="svgChapter2">Your browser does not support SVGs</object>
                         </div>
-                    </ScrollTrigger>
-            </div>
+                    </div>
+                                </Tween>
+                            )}
+                        </Scene>
+                    </Controller>
+                </div>
+
             <div className="text">
 
                 <h2>Investition in die lokale Wirtschaft</h2>
@@ -72,7 +168,8 @@ export default class extends React.Component {
                 -        Holzbau
 
             </div>
-                    
+                <ScrollTrigger onEnter={this.stopSticky.bind(this)} onExit={this.stopScene.bind(this)}
+                               triggerOnLoad={false} className="chapter-2-scene-end"/>
                     
             </section>           
         );

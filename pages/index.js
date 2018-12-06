@@ -5,6 +5,7 @@ import Chapter2 from '../views/Chapter2'
 import Chapter3 from '../views/Chapter3'
 import Summary from '../views/Summary'
 import Contact from '../views/Contact'
+import ScrollContainer from '../views/ScrollContainer'
 import { Controller, Scene } from 'react-scrollmagic';
 
 import 'normalize.css'
@@ -14,14 +15,7 @@ import './index.css'
 export default class extends React.Component {
     render(){
         return (
-            <div id="app">
-                <Header />
-                <Chapter1 />
-                <Chapter2 />
-                <Chapter3 />
-                <Summary />
-                <Contact />
-            </div>           
+            <ScrollContainer />
         );
     }
 }
