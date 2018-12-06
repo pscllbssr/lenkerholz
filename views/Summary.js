@@ -1,47 +1,22 @@
-import './Chapter.css';
-import './Summary.css';
-import ScrollTrigger from 'react-scroll-trigger';
-import { Controller, Scene } from 'react-scrollmagic';
-import { Tween, Timeline } from 'react-gsap';
-
-
 export default class extends React.Component {
 
-    constructor(props){
-
+    constructor(props) {
         super(props)
-        this.state = { visible: false }
     }
 
-    onEnterViewport() {
-        this.setState({
-          visible: true,
-        });
-      }
-     
-      onExitViewport() {
-        this.setState({
-          visible: false,
-        });
-      }
-
-    render(){
-
-        const {
-            visible,
-          } = this.state;
+    render() {
 
         return (
-            <section className="section summary">
-                <div className="text-content">
+            <div id={this.props.id} className='scene'>
+                <div className="text">
                     <div>
                         <h2>Zusammenfassung</h2>
                         <p>Sed semper consequat elementum. Nullam convallis porta hendrerit. In facilisis, nibh
-                        quis elementum varius, mauris mauris laoreet leo, id consectetur arcu enim id ligula.
+                            quis elementum varius, mauris mauris laoreet leo, id consectetur arcu enim id ligula.
 
-                        Ut scelerisque eu tellus ac laoreet. Cras fermentum magna in arcu
+                            Ut scelerisque eu tellus ac laoreet. Cras fermentum magna in arcu
 
-                        pharetra aliquet. Nunc sed condimentum purus.</p>
+                            pharetra aliquet. Nunc sed condimentum purus.</p>
                     </div>
                     <div className="summary-grid">
                         <div>
@@ -56,8 +31,8 @@ export default class extends React.Component {
                     </div>
 
                 </div>
-                    
-            </section>           
+            </div>
+
         );
     }
 }

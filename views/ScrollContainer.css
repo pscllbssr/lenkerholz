@@ -2,25 +2,6 @@
     box-sizing: border-box;
 }
 
-.timeline-toggler{
-    position: fixed;
-    left: 30px;
-    top: 30px;
-    z-index:999;
-    opacity: .25;
-    background: transparent;
-    border: 2px dotted white;
-    color: white;
-    border-radius: 10px;
-    padding: 10px 15px;
-    outline: 0;
-    transition: opacity 300ms;
-    cursor: pointer;
-}
-.timeline-toggler:hover{
-    opacity: 1;
-}
-
 .full-screen{
     position: fixed;
     top: 0;
@@ -44,30 +25,11 @@
     padding: 2em;
 }
 
-.timeline{
-    min-height: 1000vh;
+.progress{
+    position: fixed;
+    left:0;
+    top:0;
+    background: white;
+    z-index: 998;
+    height: 5px;
 }
-
-.animation>div{
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-.animation>div.visible{
-    visibility: visible;
-    opacity: 1;
-}
-
-.animation>div object{
-    width: 100%;
-}
-
-.trigger{
-    height: 100vh;
-
-}
-.trigger1,.trigger3, .trigger5{background: green}

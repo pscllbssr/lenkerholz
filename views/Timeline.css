@@ -1,0 +1,36 @@
+.timeline-toggler {
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    z-index: 999;
+    opacity: .25;
+    background: transparent;
+    border: 2px dotted white;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    outline: 0;
+    transition: opacity 300ms;
+    cursor: pointer;
+}
+
+.timeline-toggler:hover {
+    opacity: 1;
+}
+
+.timeline {
+    display: flex;
+}
+
+.trigger {
+    height: 100vh;
+    margin-bottom: 50px;
+
+    position: relative;
+
+}
+
+.trigger > div {
+    background: green;
+    height: 50px;
+}

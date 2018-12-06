@@ -7,19 +7,17 @@ export default class extends React.Component {
     render() {
 
         return (
-            <div id={this.props.id}>
+            <div id={this.props.id} className='scene' style={{background: '#b4ded4'}}>
                 <object type="image/svg+xml" data="/static/chapter1/Chapter1.svg"
-                        id="svgChapter1">Your browser does not support
+                        className='scene__background'>Your browser does not support
                     SVGs
                 </object>
                 <div className="text">
-                    <h3>Lebensraum für Tiere und Pflanzen</h3>
-
-                    Der Wald übernimmt nebst Schutzfunktionen auch Nutz- und Wohlfartsfunktionen. Weiter ist
-                    der
-                    Wald auch Lebensraum für Pflanzen und Tiere und ein natürlicher Filter für Wasser und
-                    Luft.
-                    Diese drei Waldfunktionen sind im Waldgesetz erwähnt.
+                    <h2>Waldpflege</h2>
+                    <h3>Wohlfahrts- und Nutzfunktion</h3>
+                    Neben seiner Schutzfunktion dient der Wald auch als Lebensraum für zahlreiche einheimische Tiere und
+                    Pflanzen. Er bildet eine naturnahe Lebensgemeinschaft und bietet ein natürliches Erholungsgebiet.
+                    Durch das filtern von Luft und Wasser übernimmt der Wald auch eine wichtige Nutzfunktion.
                 </div>
             </div>
         );

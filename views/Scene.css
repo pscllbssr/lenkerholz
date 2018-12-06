@@ -1,0 +1,33 @@
+.animation>div{
+
+}
+.animation>div.visible{
+
+}
+
+.animation>div object{
+    width: 100%;
+}
+
+.scene{
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.scene.visible{
+    visibility: visible;
+    opacity: 1;
+}
+
+.scene__background{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
