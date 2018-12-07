@@ -50,3 +50,44 @@ body{
     max-width: 800px;
     margin: 0 auto;
 }
+
+.text{
+    margin-top: 5vh;
+    margin-right: 5vw;
+    text-align: justify;
+    font-size: 10pt;
+}
+
+.scene10{
+    margin-right: 3vw;
+}
+.scene11{
+    margin-right: 3vw;
+}
+.scene12{
+    margin-right: 3vw;
+}
+.scene20{
+    margin-right: 3vw;
+}
+.scene21{
+    margin-right: 3vw;
+}
+.scene22{
+    margin-right: 3vw;
+}
+.scene23{
+    margin-right: 3vw;
+}
+.scene30{
+    margin-right: 3vw;
+}
+.scene31{
+    margin-right: 3vw;
+}
+.scene32{
+    margin-right: 3vw;
+}
+.scene33{
+    margin-right: 3vw;
+}
