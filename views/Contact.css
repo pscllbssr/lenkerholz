@@ -8,3 +8,22 @@
     text-align: center;
 }
 
+.phone{
+    display: flex; 
+    justify-content: row;
+    justify-content: center;
+}
+
+.phone img{
+    width: 5%;
+    height: 5%;
+}
+
+button {
+    border-radius: 10%;
+    background-color: #389C5E;
+    padding: 16px 64px;
+    color: white;
+    font-weight: bold;
+}
+

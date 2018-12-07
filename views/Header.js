@@ -13,6 +13,8 @@ export default class extends React.Component {
                 </object>
                 <div className="text visible">
                     <h1>Lenker Holz</h1>
+                    <p>natürlicher Halt</p>
+                    <img src="../static/img/logo.jpeg"></img>
                 </div>
             </div>
         );
