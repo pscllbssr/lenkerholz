@@ -6,12 +6,20 @@ export default class extends React.Component {
 
     render() {
 
+        let textClass= 'text';
+
+        if (this.props.progress > 0.2 && this.props.progress < 0.8) {
+            textClass += ' visible';
+        } else if (this.props.progress > 0.8) {
+            textClass += ' out';
+        }
+
         return (
             <div id={this.props.id} className='scene'>
                 <object type="image/svg+xml" data="/static/chapter2/Industrie02.svg"
                         className='scene__background'>Your browser does not support SVGs
                 </object>
-                <div className="text">
+                <div className={textClass}>
                     <h2>Investition in die lokale Wirtschaft</h2>
 
                     <h3>Holztransport</h3>

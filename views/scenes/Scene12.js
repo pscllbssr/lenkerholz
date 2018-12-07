@@ -6,13 +6,21 @@ export default class extends React.Component {
 
     render() {
 
+        let textClass= 'text';
+
+        if (this.props.progress > 0.2 && this.props.progress < 0.8) {
+            textClass += ' visible';
+        } else if (this.props.progress > 0.8) {
+            textClass += ' out';
+        }
+
         return (
             <div id={this.props.id} className='scene' style={{background: '#b4ded4'}}>
                 <object type="image/svg+xml" data="/static/chapter1/Forest04.svg"
                         className='scene__background'>Your browser does not support
                     SVGs
                 </object>
-                <div className="text">
+                <div className={textClass}>
                     <h2>Waldpflege</h2>
                     <h3>Eine aktive Bewirtschaftung wird benötigt</h3>
                     Damit der Wald diese Funktionen erbringen kann, ist eine aktive Bewirtschaftung und Pflege

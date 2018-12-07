@@ -24,6 +24,20 @@
     bottom: 0;
     width: 31.5vw;
     padding: 2em;
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
+    transition: 300ms;
+}
+.full-screen .text.visible{
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    /*animation: fadeIn 300ms ease-in both;*/
+}
+
+.full-screen .text.out{
+    transform: translate3d(0, -20%, 0);
+    opacity: 0;
+    /*animation: fadeIn 300ms ease-in both;*/
 }
 
 .progress{
@@ -33,4 +47,15 @@
     background: white;
     z-index: 998;
     height: 5px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }

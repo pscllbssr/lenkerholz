@@ -6,13 +6,21 @@ export default class extends React.Component {
 
     render(){
 
+        let textClass= 'text';
+
+        if (this.props.progress > 0.2 && this.props.progress < 0.8) {
+            textClass += ' visible';
+        } else if (this.props.progress > 0.8) {
+            textClass += ' out';
+        }
+
         return (
             <div id={this.props.id} className='scene' style={{background: '#b4ded4'}}>
                     <object type="image/svg+xml" data="/static/chapter1/Forest02.svg"
                             className='scene__background'>Your browser does not support
                         SVGs
                     </object>
-                    <div className="text">
+                    <div className={textClass}>
                         <h2>Waldpflege</h2>
                         <h3>Der Wald nimmt eine Schutzfunktion ein</h3>
                         Beinahe 90% der Waldfläche der Gemeinde Lenk ist als Schutzwald beschrieben und benötigt eine nachhaltige, intensive Pflege. <br></br>

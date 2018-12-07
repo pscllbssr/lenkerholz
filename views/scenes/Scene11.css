@@ -1,11 +1,32 @@
 #bird{
     position: fixed;
-    bottom: 200px;
+    right: 50%;
+    bottom: 70%;
     animation: fly 2s 2s infinite;
 }
+
+#bird {
+}
+
+.fader{
+    opacity: 0;
+    transition: 200ms all ease;
+}
+.fader.visible{
+    opacity: 1;
+    animation: pop 0.3s linear 1;
+}
+.fader.out{
+    opacity: 0;
+}
+
 
 @keyframes fly {
     0% {     transform: translateY(0); }
     50% {     transform: translateY(20px); }
     100% {     transform: translateY(0); }
+}
+
+@keyframes pop{
+    50%  {transform: scale(1.2);}
 }
