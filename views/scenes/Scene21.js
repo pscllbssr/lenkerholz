@@ -19,7 +19,7 @@ export default class extends React.Component {
                 <object type="image/svg+xml" data="/static/chapter2/Industrie02.svg"
                         className='scene__background'>Your browser does not support SVGs
                 </object>
-                <div className={textClass}>
+                <div className={textClass} >
                     <h2>Investition in die lokale Wirtschaft</h2>
 
                     <h3>Holztransport</h3>

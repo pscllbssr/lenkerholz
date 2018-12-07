@@ -5,13 +5,16 @@
     flex-direction: column;
     height: 100vh; 
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    font-size: 12pt;
+/*    text-align: justify;    */
 }
 
 .phone{
     display: flex; 
     justify-content: row;
     justify-content: center;
+    align-items: center;
 }
 
 .phone img{
@@ -27,3 +30,7 @@ button {
     font-weight: bold;
 }
 
+.sdg img{
+    width: 100%;
+    height: auto;
+}
