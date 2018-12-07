@@ -17,9 +17,11 @@ export default class extends React.Component {
                         <img src="../static/img/chopper.png"></img>
                         <p>+41 79 123 45 67</p>
                     </div>
-                    
+                    <div className="sdg">
+                    <img src="../static/img/SDG.jpeg"></img>
+                    </div>
                 </div>
-            <img src="../static/img/SDG.jpeg"></img>
+            
 
             </div>
         );

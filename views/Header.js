@@ -1,3 +1,6 @@
+
+import './Header.css'
+
 export default class extends React.Component {
 
     constructor(props){
@@ -12,9 +15,9 @@ export default class extends React.Component {
                     Your browser does not support SVGs
                 </object>
                 <div className="text visible">
-                    <h1>Lenker Holz</h1>
-                    <p>natürlicher Halt</p>
-                    <img src="../static/img/logo.jpeg"></img>
+                    
+                    <img id="logo" src="../static/img/logo.png"></img>
+                    
                 </div>
             </div>
         );
