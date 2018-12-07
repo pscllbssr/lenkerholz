@@ -43,6 +43,7 @@ font-style:normal;font-weight:700;
 body{
     font-family: allumi-std, sans-serif;
     color: #3a5e48;
+    line-height: 1.5;
 }
 
 .content-wrapper{
