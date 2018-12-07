@@ -59,3 +59,15 @@
         transform: translate3d(0, 0, 0);
     }
 }
+
+.fader{
+    opacity: 0;
+    transition: 200ms all ease;
+}
+.fader.visible{
+    opacity: 1;
+    animation: pop 0.3s linear 1;
+}
+.fader.out{
+    opacity: 0;
+}
