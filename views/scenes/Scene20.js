@@ -13,10 +13,20 @@ export default class extends React.Component {
             textClass += ' out';
         }
 
+        let faderClass = 'scene__background fadeIn';
+        if (this.props.progress > 0.3 && this.props.progress < 0.9) {
+            faderClass += ' visible';
+        } else if (this.props.progress > 0.9) {
+            faderClass += ' out';
+        }
+
         return (
             <div id={this.props.id} className='scene'>
-                <object type="image/svg+xml" data="/static/chapter2/Industrie01.svg"
+                <object type="image/svg+xml" data="/static/chapter2/Industrie01_back.svg"
                         className='scene__background'>Your browser does not support SVGs
+                </object>
+                <object type="image/svg+xml" data="/static/chapter2/Industrie01.svg"
+                        className={faderClass}>Your browser does not support SVGs
                 </object>
                 <div className={textClass}>
                     <h2>Investition in die lokale Wirtschaft</h2>

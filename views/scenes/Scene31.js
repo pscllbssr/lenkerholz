@@ -6,12 +6,10 @@ export default class extends React.Component {
 
     render() {
 
-        let textClass= 'text';
+        let textClass= 'text visible';
 
-        if (this.props.progress > 0.2 && this.props.progress < 0.8) {
+        if (this.props.progress < 0.2) {
             textClass += ' visible';
-        } else if (this.props.progress > 0.8) {
-            textClass += ' out';
         }
 
         return (

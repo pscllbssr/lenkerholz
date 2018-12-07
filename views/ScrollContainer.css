@@ -71,3 +71,14 @@
 .fader.out{
     opacity: 0;
 }
+
+.fadeIn{
+    opacity: 0;
+    transition: 200ms all ease;
+}
+.fadeIn.visible{
+    opacity: 1;
+}
+.fadeIn.out{
+    opacity: 0;
+}
