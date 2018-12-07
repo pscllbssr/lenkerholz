@@ -58,6 +58,30 @@ body{
     font-size: 10pt;
 }
 
+#scene0 .text{
+    margin-top: 10vh;
+    margin-right: 10vw;
+}
+
+#scene20 .text{
+    margin-top: 15vh;
+}
+#scene21 .text{
+    margin-top: 20vh;
+}
+#scene22 .text{
+    margin-top: 20vh;
+}
+#scene23 .text{
+    margin-top: 20vh;
+}
+
+#scene30 .text{
+    margin-right: 20vh;
+}
+
+
+/*
 .scene10{
     margin-right: 3vw;
 }
@@ -91,3 +115,4 @@ body{
 .scene33{
     margin-right: 3vw;
 }
+*/
