@@ -53,10 +53,11 @@ body{
 
 .text{
     margin-top: 5vh;
-    margin-right: 5vw;
+    margin-right: 0vw;
     text-align: justify;
-    font-size: 10pt;
+    font-size: 12pt;
 }
+
 
 #scene0 .text{
     margin-top: 10vh;
@@ -65,20 +66,38 @@ body{
 
 #scene20 .text{
     margin-top: 15vh;
+    margin-right: 5vw;
 }
 #scene21 .text{
     margin-top: 20vh;
+    margin-right: 5vw;
 }
 #scene22 .text{
     margin-top: 20vh;
+    margin-right: 5vw;
 }
 #scene23 .text{
     margin-top: 20vh;
+    margin-right: 5vw;
 }
 
 #scene30 .text{
-    margin-right: 20vh;
+    margin-right: 5vw;
 }
+
+#scene31scene31 .text{
+    margin-right: 5vw;
+}
+
+#scene32 .text{
+    margin-right: 5vw;
+}
+
+#scene33 .text{
+    margin-right: 5vw;
+}
+
+
 
 
 /*

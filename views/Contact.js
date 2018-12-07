@@ -14,7 +14,7 @@ export default class extends React.Component {
                     </p>
                     <p><button>E-Mail</button></p>
                     <div className='phone'>
-                        <img src="../static/img/chopper.png"></img>
+                        <img src="../static/img/phone.png"></img>
                         <p>+41 79 123 45 67</p>
                     </div>
                     <div className="sdg">
