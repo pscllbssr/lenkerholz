@@ -11,7 +11,7 @@ export default class extends React.Component {
                         className='scene__background'>
                     Your browser does not support SVGs
                 </object>
-                <div className="text">
+                <div className="text" class="visible">
                     <h1>Lenker Holz</h1>
                     <p>{this.props.progress}</p>
                 </div>
