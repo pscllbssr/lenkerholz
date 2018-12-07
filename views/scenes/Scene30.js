@@ -1,9 +1,11 @@
-import {Tween, Timeline} from 'react-gsap';
+import {Tween, Timeline, TweenMax} from 'react-gsap';
+import { Controller, Scene } from 'react-scrollmagic';
+
 
 export default class extends React.Component {
 
     constructor(props) {
-        super(props)
+        super(props);
     }
 
     render() {
@@ -28,8 +30,9 @@ export default class extends React.Component {
                     to={{
                         transform: 'translateX(500px)'
                     }}
-                    totalProgress={this.props.progress}
+                    progress={this.props.progress}
                     paused
+                    stagger={0.15}
                 >
                     <object type="image/svg+xml" data="/static/chapter3/Life01_foreigntruck.svg"
                             className='scene__background'>Your browser does not support SVGs
@@ -38,7 +41,7 @@ export default class extends React.Component {
 
                 <div className={textClass}>
                     <h2>Ökologie</h2>
-
+                    <p>{this.value}</p>
                     <h3>Weniger Treibhausgase</h3>
                     Der Transport von Holz erzeugt, je nach Transportweg, einen grossen Teil des ausgestossenen
                     Treibhausgases der Holzproduktion. Bei lokal geschlagenem Holz sind die Transportwege aufs Minimum

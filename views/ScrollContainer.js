@@ -3,12 +3,16 @@ import './Scene.css';
 import './Timeline.css';
 import ScrollTrigger from 'react-scroll-trigger';
 import * as React from "react";
+import {Tween, Timeline} from 'react-gsap';
+
 
 export default class extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {progress: 0, transparent: false}
+
+        this.proxyTween = TweenLite.to({}, 1, {paused: true});
     }
 
     onEnterViewport(state, ref) {
@@ -48,7 +52,7 @@ export default class extends React.Component {
             <div className='trigger' style={scene.style}>
                 <ScrollTrigger onEnter={this.onEnterViewport.bind(this)} onExit={this.onExitViewport.bind(this)}
                                onProgress={this.onProgress.bind(this)}
-                               triggerOnLoad={true} className="trigger0" data-ref={scene.id}
+                               triggerOnLoad={true} className="trigger0" data-ref={scene.id} throttleScroll={0}
                 >{scene.id}</ScrollTrigger>
             </div>
         );
