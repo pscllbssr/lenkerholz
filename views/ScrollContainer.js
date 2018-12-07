@@ -4,14 +4,6 @@ import './Timeline.css';
 import ScrollTrigger from 'react-scroll-trigger';
 import * as React from "react";
 
-import Header from './Header';
-import Scene10 from './scenes/Scene10';
-import Scene11 from './scenes/Scene11';
-import Scene12 from './scenes/Scene12';
-import Scene20 from './scenes/Scene20';
-import Summary from './Summary';
-import Contact from './Contact';
-
 export default class extends React.Component {
 
     constructor(props) {
