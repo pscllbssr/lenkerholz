@@ -1,17 +1,20 @@
+import PinParallax from '../../components/PinnableParallax'
+
 export default class extends React.Component {
 
     constructor(props) {
         super(props)
     }
 
-    render() {
-        let textClass= 'text';
 
+
+    render() {
+        /*
         if (this.props.progress > 0.2 && this.props.progress < 0.8) {
             textClass += ' visible';
         } else if (this.props.progress > 0.8) {
             textClass += ' out';
-        }
+        }*/
 
         let faderClass = 'scene__background fadeIn';
         if (this.props.progress > 0.3 && this.props.progress < 0.9) {
@@ -19,6 +22,7 @@ export default class extends React.Component {
         } else if (this.props.progress > 0.9) {
             faderClass += ' out';
         }
+
 
         return (
             <div id={this.props.id} className='scene'>
@@ -28,9 +32,8 @@ export default class extends React.Component {
                 <object type="image/svg+xml" data="/static/chapter2/Industrie01.svg"
                         className={faderClass}>Your browser does not support SVGs
                 </object>
-                <div className={textClass}>
+                <PinParallax className='text' progress={this.props.progress} in={0.2} out={0.8}>
                     <h2>Investition in die lokale Wirtschaft</h2>
-
                     <h3>Forstwirtschaft</h3>
                     Die Bäume werden durch genaue Untersuchung gekennzeichnet und durch speziell ausgebildetes Personal
                     geschlagen. Das ist nur einer der Gründe, warum die einheimische Waldwirtschaft vor grossen
@@ -38,7 +41,7 @@ export default class extends React.Component {
                     gezeichnet, was die Arbeiten erschwert. Die Wettbewerbsfähigkeit ist durch diesen grossen
                     Mehraufwand schwierig zu gewährleisten. Durch Unterstützung der heimischen Forstwirtschaft werden
                     zahlreiche Stellen sichergestellt.
-                </div>
+                </PinParallax>
             </div>
         );
     }

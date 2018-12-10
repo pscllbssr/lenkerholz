@@ -24,9 +24,6 @@
     bottom: 0;
     width: 40vw;
     padding: 2em;
-    opacity: 0;
-    transform: translate3d(0, 20%, 0);
-    transition: 300ms;
 }
 .full-screen .text.visible{
     transform: translate3d(0, 0, 0);

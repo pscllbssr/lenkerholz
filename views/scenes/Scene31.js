@@ -1,3 +1,5 @@
+import PinParallax from '../../components/PinnableParallax'
+
 export default class extends React.Component {
 
     constructor(props) {
@@ -12,12 +14,19 @@ export default class extends React.Component {
             textClass += ' visible';
         }
 
+        let image = '/static/chapter3/chapter30.svg';
+ if(this.props.progress > 0.66){
+            image = '/static/chapter3/chapter32.svg'
+        } else if(this.props.progress > 0.33){
+            image = '/static/chapter3/chapter31.svg'
+        }
+
         return (
             <div id={this.props.id} className='scene'>
-                <object type="image/svg+xml" data="/static/chapter3/chapter30.svg"
+                <object type="image/svg+xml" data={image}
                         className='scene__background'>Your browser does not support SVGs
                 </object>
-                <div className={textClass}>
+                <PinParallax className='text' progress={this.props.progress} in={0.2} out={0.8}>
                     <h2>Ökologie</h2>
 
                     <h3>Mehrere Leben</h3>
@@ -37,7 +46,7 @@ export default class extends React.Component {
                             </li>
                         </ul>
                         Holz ist ein Naturprodukt und kennt keinen Abfall. Wer Lenker Holz verwendet trägt dazu bei, dass der Wald fit und stabil bleibt.
-                </div>
+                </PinParallax>
             </div>
         );
     }

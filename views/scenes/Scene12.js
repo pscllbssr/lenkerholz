@@ -1,3 +1,5 @@
+import PinParallax from '../../components/PinnableParallax'
+
 export default class extends React.Component {
 
     constructor(props) {
@@ -20,7 +22,7 @@ export default class extends React.Component {
                         className='scene__background'>Your browser does not support
                     SVGs
                 </object>
-                <div className={textClass}>
+                <PinParallax className='text' progress={this.props.progress} in={0.2} out={0.8}>
                     <h2>Waldpflege</h2>
                     <h3>Eine aktive Bewirtschaftung wird benötigt</h3>
                     Damit der Wald diese Funktionen erbringen kann, ist eine aktive Bewirtschaftung und Pflege
@@ -28,7 +30,7 @@ export default class extends React.Component {
                     Verteilung erhalten bleibt. Durch die gezielte Holzung wird eine Überalterung sowie eine Erkrankung
                     des Waldes verhindert. In der Lenk wird grossen Wert auf die nachhaltige Bewirtschaftung gelegt; es
                     wird nie mehr Holz verabeitet, als nachwächst.
-                </div>
+                </PinParallax>
             </div>
         );
     }

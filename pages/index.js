@@ -3,7 +3,7 @@ import ScrollContainer from '../views/ScrollContainer';
 import 'normalize.css'
 import 'animate.css'
 import './index.css'
-import scenes from "../views/scenes";
+import scenes from "../static/data/scenes";
 
 export default class extends React.Component {
     render(){

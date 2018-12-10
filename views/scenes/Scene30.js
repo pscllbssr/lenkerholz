@@ -1,5 +1,6 @@
 import {Tween, Timeline, TweenMax} from 'react-gsap';
-import { Controller, Scene } from 'react-scrollmagic';
+import PinParallax from '../../components/PinnableParallax'
+import './Scene30.css';
 
 
 export default class extends React.Component {
@@ -9,14 +10,6 @@ export default class extends React.Component {
     }
 
     render() {
-
-        let textClass = 'text';
-
-        if (this.props.progress > 0.2 && this.props.progress < 0.8) {
-            textClass += ' visible';
-        } else if (this.props.progress > 0.8) {
-            textClass += ' out';
-        }
 
         return (
             <div id={this.props.id} className='scene'>
@@ -35,11 +28,11 @@ export default class extends React.Component {
                     stagger={0.15}
                 >
                     <object type="image/svg+xml" data="/static/chapter3/Life01_foreigntruck.svg"
-                            className='scene__background'>Your browser does not support SVGs
+                            className='scene__background' id='foreignTruck'>Your browser does not support SVGs
                     </object>
                 </Tween>
 
-                <div className={textClass}>
+                <PinParallax className='text' progress={this.props.progress} in={0.2} out={0.8}>
                     <h2>Ökologie</h2>
                     <p>{this.value}</p>
                     <h3>Weniger Treibhausgase</h3>
@@ -52,7 +45,7 @@ export default class extends React.Component {
                     verwendet werden. <br></br><br></br>
                     Die Herstellung von Holzprodukten verbraucht viel weniger Energie, als jene anderer Baustoffe wie
                     z.B. Beton. Durch diese Energieeffizienz sinkt der Ausstoss von Treibhausgasen erheblich.
-                </div>
+                </PinParallax>
             </div>
         );
     }

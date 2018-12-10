@@ -1,7 +1,5 @@
 import Hallo from '../components/HelloWorld'
 import './Contact.css'
-import { Controller, Scene } from 'react-scrollmagic';
-import { Tween, Timeline } from 'react-gsap';
 
 export default class extends React.Component {
     render(){

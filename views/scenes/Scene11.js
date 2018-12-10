@@ -1,7 +1,5 @@
 import './Scene11.css';
-import {Tween, Timeline} from 'react-gsap';
-import {Controller, Scene} from 'react-scrollmagic';
-
+import PinParallax from '../../components/PinnableParallax'
 
 export default class extends React.Component {
 
@@ -12,13 +10,6 @@ export default class extends React.Component {
     render() {
 
         let birdClass = 'fader';
-        let textClass= 'text';
-
-        if (this.props.progress > 0.2 && this.props.progress < 0.8) {
-            textClass += ' visible';
-        } else if (this.props.progress > 0.8) {
-            textClass += ' out';
-        }
 
         if (this.props.progress > 0.3 && this.props.progress < 0.9) {
             birdClass += ' visible';
@@ -35,17 +26,17 @@ export default class extends React.Component {
                 <div id='bird'>
                     <object type="image/svg+xml" data="/static/chapter1/Bird.svg" width="85" height="42"
                             className={birdClass}
-                            >Your browser does not support
+                    >Your browser does not support
                         SVGs
                     </object>
                 </div>
-                <div className={textClass}>
+                <PinParallax className='text' progress={this.props.progress} in={0.2} out={0.8}>
                     <h2>Waldpflege</h2>
                     <h3>Wohlfahrts- und Nutzfunktion</h3>
                     Neben seiner Schutzfunktion dient der Wald auch als Lebensraum für zahlreiche einheimische Tiere und
                     Pflanzen. Er bildet eine naturnahe Lebensgemeinschaft und bietet ein natürliches Erholungsgebiet.
                     Durch das filtern von Luft und Wasser übernimmt der Wald auch eine wichtige Nutzfunktion.
-                </div>
+                </PinParallax>
             </div>
         );
     }

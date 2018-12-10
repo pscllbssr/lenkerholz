@@ -3,7 +3,6 @@ import './Scene.css';
 import './Timeline.css';
 import ScrollTrigger from 'react-scroll-trigger';
 import * as React from "react";
-import {Tween, Timeline} from 'react-gsap';
 
 
 export default class extends React.Component {
@@ -49,10 +48,11 @@ export default class extends React.Component {
             fullScreenStyle = {opacity: 0.5};
 
         let triggers = this.props.scenes.map((scene) =>
-            <div className='trigger' style={scene.style}>
+            <div className='trigger'>
                 <ScrollTrigger onEnter={this.onEnterViewport.bind(this)} onExit={this.onExitViewport.bind(this)}
                                onProgress={this.onProgress.bind(this)}
                                triggerOnLoad={true} className="trigger0" data-ref={scene.id} throttleScroll={0}
+                               style={{'height': (scene.height*100) + 'vh'}}
                 >{scene.id}</ScrollTrigger>
             </div>
         );
