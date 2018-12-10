@@ -10,26 +10,21 @@ export default class extends React.Component {
     constructor(props) {
         super(props);
         this.state = {progress: 0, transparent: false}
-
-        this.proxyTween = TweenLite.to({}, 1, {paused: true});
     }
 
     onEnterViewport(state, ref) {
-        //console.log('enter: ' + ref.props['data-ref']);
         let el = document.getElementById(ref.props['data-ref']);
         if (el)
             el.classList.toggle("visible");
     }
 
     onExitViewport(state, ref) {
-        //console.log('exit: ' + ref.props['data-ref']);
         let el = document.getElementById(ref.props['data-ref']);
         if (el)
             el.classList.toggle("visible");
     }
 
     onProgress(state, ref) {
-        //console.log(state.progress);
         this.setState({
             progress: state.progress,
         });
