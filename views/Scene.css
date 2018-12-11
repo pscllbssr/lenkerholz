@@ -27,4 +27,9 @@
     bottom: 0;
     position: absolute;
     width: 100%;
+    display: block;
+}
+
+.scene object{
+    display: block;
 }

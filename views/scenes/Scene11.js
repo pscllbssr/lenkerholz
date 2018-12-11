@@ -1,5 +1,6 @@
 import './Scene11.css';
 import PinParallax from '../../components/PinnableParallax'
+import PopIn from '../../components/CssAnimator'
 
 export default class extends React.Component {
 
@@ -9,27 +10,18 @@ export default class extends React.Component {
 
     render() {
 
-        let birdClass = 'fader';
-
-        if (this.props.progress > 0.3 && this.props.progress < 0.9) {
-            birdClass += ' visible';
-        } else if (this.props.progress > 0.9) {
-            birdClass += ' out';
-        }
-
         return (
             <div id={this.props.id} className='scene' style={{background: '#b4ded4'}}>
                 <object type="image/svg+xml" data="/static/chapter1/Forest03.svg"
                         className='scene__background'>Your browser does not support SVGs
                 </object>
 
-                <div id='bird'>
-                    <object type="image/svg+xml" data="/static/chapter1/Bird.svg" width="85" height="42"
-                            className={birdClass}
-                    >Your browser does not support
+                <PopIn progress={this.props.progress} in={0.25} out={0.85} id={'bird'} className={'popin'}>
+                    <object type="image/svg+xml" data="/static/chapter1/Bird.svg" width="85" height="42">Your browser does not support
                         SVGs
                     </object>
-                </div>
+                </PopIn>
+
                 <PinParallax className='text' progress={this.props.progress} in={0.2} out={0.8}>
                     <h2>Waldpflege</h2>
                     <h3>Wohlfahrts- und Nutzfunktion</h3>

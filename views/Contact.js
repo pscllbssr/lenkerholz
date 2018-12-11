@@ -1,4 +1,3 @@
-import Hallo from '../components/HelloWorld'
 import './Contact.css'
 
 export default class extends React.Component {
