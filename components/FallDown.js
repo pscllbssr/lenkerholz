@@ -9,10 +9,11 @@ export default class extends React.Component {
     }
 
     render(){
-        let styles = {transform: 'translateY(-110%)'};
+        const sign = this.props.inverted ? '' : '-';
+        let styles = {transform: 'translateY(' + sign + '110%)'};
         if(this.props.progress > this.props.start && this.props.progress < this.props.end){
             let relativeProgress = this.calculateInvertedRelativeProgress(this.props.start, this.props.end, this.props.progress);
-            styles = {transform: 'translateY(-' + relativeProgress + '%)'}
+            styles = {transform: 'translateY(' + sign + relativeProgress + '%)'}
         }else if(this.props.progress > this.props.end){
             styles = {};
         }

@@ -1,4 +1,5 @@
 import PinParallax from '../../components/PinnableParallax'
+import FallDown from '../../components/FallDown'
 
 export default class extends React.Component {
 
@@ -22,6 +23,12 @@ export default class extends React.Component {
                         className='scene__background'>Your browser does not support
                     SVGs
                 </object>
+
+                <FallDown className='scene__background' progress={this.props.progress} start={0.25} end={0.37} inverted={true}>
+                    <object type="image/svg+xml" data="/static/chapter1/Forest02.svg"
+                            className=''>Your browser does not support SVGs
+                    </object>
+                </FallDown>
                 <PinParallax className='text' progress={this.props.progress} in={0.2} out={0.8}>
                     <h2>Waldpflege</h2>
                     <h3>Eine aktive Bewirtschaftung wird benötigt</h3>

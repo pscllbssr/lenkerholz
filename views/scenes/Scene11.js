@@ -1,6 +1,7 @@
 import './Scene11.css';
 import PinParallax from '../../components/PinnableParallax'
 import PopIn from '../../components/CssAnimator'
+import FallDown from '../../components/FallDown'
 
 export default class extends React.Component {
 
@@ -15,6 +16,12 @@ export default class extends React.Component {
                 <object type="image/svg+xml" data="/static/chapter1/Forest03.svg"
                         className='scene__background'>Your browser does not support SVGs
                 </object>
+
+                <FallDown className='scene__background' progress={this.props.progress} start={0.25} end={0.4}>
+                    <object type="image/svg+xml" data="/static/chapter1/Forest02.svg"
+                            className=''>Your browser does not support SVGs
+                    </object>
+                </FallDown>
 
                 <PopIn progress={this.props.progress} in={0.25} out={0.85} id={'bird'} className={'popin'}>
                     <object type="image/svg+xml" data="/static/chapter1/Bird.svg" width="85" height="42">Your browser does not support
