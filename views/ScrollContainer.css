@@ -18,7 +18,7 @@
 
 .full-screen .text{
     position: fixed;
-    z-index: 100;
+    z-index: 200; /* normal scene-background is 100 */
     right: 0;
     top: 0;
     bottom: 0;

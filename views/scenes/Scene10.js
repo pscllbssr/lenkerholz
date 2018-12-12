@@ -1,3 +1,4 @@
+import './Scene10.css';
 import PinParallax from '../../components/PinnableParallax'
 import FallDown from '../../components/FallDown'
 
@@ -10,11 +11,21 @@ export default class extends React.Component {
     render() {
         return (
             <div id={this.props.id} className='scene' style={{background: '#b4ded4'}}>
-                <object type="image/svg+xml" data="/static/chapter1/Forest02.svg"
+                <object type="image/svg+xml" data="/static/chapter1/Forest.svg"
                         className='scene__background'>Your browser does not support SVGs
                 </object>
-                <FallDown className='scene__background' progress={this.props.progress} start={0.2} end={0.3}>
-                    <object type="image/svg+xml" data="/static/chapter1/Forest02.svg"
+                <FallDown className='scene__background behind-scene-background' progress={this.props.progress} start={0.2} end={0.3}>
+                    <object type="image/svg+xml" data="/static/chapter1/Rock01.svg"
+                            className=''>Your browser does not support SVGs
+                    </object>
+                </FallDown>
+                <FallDown className='scene__background behind-scene-background' progress={this.props.progress} start={0.22} end={0.35}>
+                    <object type="image/svg+xml" data="/static/chapter1/Rock02.svg"
+                            className=''>Your browser does not support SVGs
+                    </object>
+                </FallDown>
+                <FallDown className='scene__background behind-scene-background' progress={this.props.progress} start={0.25} end={0.37}>
+                    <object type="image/svg+xml" data="/static/chapter1/Rock03.svg"
                             className=''>Your browser does not support SVGs
                     </object>
                 </FallDown>

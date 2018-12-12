@@ -1,0 +1,8 @@
+.behind-scene-background{
+    z-index: 95;
+}
+.before-scene-background{
+    z-index: 105;
+}
+
+

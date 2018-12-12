@@ -13,12 +13,12 @@ export default class extends React.Component {
 
         return (
             <div id={this.props.id} className='scene' style={{background: '#b4ded4'}}>
-                <object type="image/svg+xml" data="/static/chapter1/Forest03.svg"
+                <object type="image/svg+xml" data="/static/chapter1/Forest.svg"
                         className='scene__background'>Your browser does not support SVGs
                 </object>
 
-                <FallDown className='scene__background' progress={this.props.progress} start={0.25} end={0.4}>
-                    <object type="image/svg+xml" data="/static/chapter1/Forest02.svg"
+                <FallDown className='scene__background' progress={this.props.progress} start={0.25} end={0.4} inverted={true}>
+                    <object type="image/svg+xml" data="/static/chapter1/Deer.svg"
                             className=''>Your browser does not support SVGs
                     </object>
                 </FallDown>
