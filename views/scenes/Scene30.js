@@ -1,5 +1,6 @@
 import {Tween, Timeline, TweenMax} from 'react-gsap';
 import PinParallax from '../../components/PinnableParallax'
+import Alternating from '../../components/Alternating'
 import './Scene30.css';
 
 
@@ -13,9 +14,11 @@ export default class extends React.Component {
 
         return (
             <div id={this.props.id} className='scene'>
+
                 <object type="image/svg+xml" data="/static/chapter3/Life01_swisstruck.svg"
                         className='scene__background'>Your browser does not support SVGs
                 </object>
+
                 <Tween
                     from={{
                         transform: 'translateX(-500px)'
@@ -25,11 +28,20 @@ export default class extends React.Component {
                     }}
                     progress={this.props.progress}
                     paused
-                    stagger={0.15}
-                >
-                    <object type="image/svg+xml" data="/static/chapter3/Life01_foreigntruck.svg"
-                            className='scene__background' id='foreignTruck'>Your browser does not support SVGs
-                    </object>
+                    stagger={0.15}>
+                    <div className={'scene__background foreignTruck'}>
+                        <Alternating progress={this.props.progress}>
+                            <object type="image/svg+xml" data="/static/chapter3/Life01_foreigntruck.svg"
+                                    className='scene__background'>
+                                Your browser does not support SVGs
+                            </object>
+                            <object type="image/svg+xml" data="/static/chapter3/Life01_foreigntruck.svg"
+                                    className='scene__background '>
+                                Your browser does not support SVGs
+                            </object>
+                        </Alternating>
+                    </div>
+
                 </Tween>
 
                 <PinParallax className='text' progress={this.props.progress} in={0.2} out={0.8}>
