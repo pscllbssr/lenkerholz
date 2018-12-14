@@ -2,7 +2,7 @@ export default class extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {fallOff: 0.9};
+        this.state = {fallOff: this.props.fallOff || 0.9};
     }
 
     calculateRelativeProgress(from,to,progress){
