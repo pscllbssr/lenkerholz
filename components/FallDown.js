@@ -27,7 +27,7 @@ export default class extends React.Component {
         }
 
         return (
-            <div className={this.props.className} style={styles}>
+            <div className={this.props.className} style={styles} id={this.props.id || ''}>
                 {this.props.children}
             </div>
         );

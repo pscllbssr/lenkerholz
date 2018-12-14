@@ -1,6 +1,7 @@
 import {Tween, Timeline, TweenMax} from 'react-gsap';
 import PinParallax from '../../components/PinnableParallax'
 import Alternating from '../../components/Alternating'
+import FallDown from '../../components/FallDown'
 import './Scene30.css';
 
 
@@ -14,10 +15,12 @@ export default class extends React.Component {
 
         return (
             <div id={this.props.id} className='scene'>
-
-                <object type="image/svg+xml" data="/static/chapter3/Life01_swisstruck.svg"
-                        className='scene__background'>Your browser does not support SVGs
-                </object>
+                <FallDown className='scene__background' progress={this.props.progress} start={0} end={0.1}
+                          inverted={false} fallOff={1}>
+                    <object type="image/svg+xml" data="/static/chapter3/Life01_swisstruck.svg"
+                            className=''>Your browser does not support SVGs
+                    </object>
+                </FallDown>
 
                 <Tween
                     from={{
