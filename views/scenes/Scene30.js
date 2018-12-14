@@ -31,11 +31,11 @@ export default class extends React.Component {
                     stagger={0.15}>
                     <div className={'scene__background foreignTruck'}>
                         <Alternating progress={this.props.progress}>
-                            <object type="image/svg+xml" data="/static/chapter3/Life01_foreigntruck.svg"
+                            <object type="image/svg+xml" data="/static/chapter3/Life01_foreigntruck-v01.svg"
                                     className='scene__background'>
                                 Your browser does not support SVGs
                             </object>
-                            <object type="image/svg+xml" data="/static/chapter3/Life01_foreigntruck.svg"
+                            <object type="image/svg+xml" data="/static/chapter3/Life01_foreigntruck-v02.svg"
                                     className='scene__background '>
                                 Your browser does not support SVGs
                             </object>
