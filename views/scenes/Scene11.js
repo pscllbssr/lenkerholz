@@ -23,6 +23,12 @@ export default class extends React.Component {
                     </object>
                 </FallDown>
 
+                <FallDown className='scene__background' progress={this.props.progress} start={0.15} end={0.3} inverted={true}>
+                    <object type="image/svg+xml" data="/static/chapter1/Hedgehog.svg"
+                            className=''>Your browser does not support SVGs
+                    </object>
+                </FallDown>
+
                 <PopIn progress={this.props.progress} in={0.25} out={0.85} id={'bird'} className={'popin'}>
                     <object type="image/svg+xml" data="/static/chapter1/Bird.svg" width="85" height="42">Your browser does not support
                         SVGs

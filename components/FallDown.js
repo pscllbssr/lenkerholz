@@ -1,5 +1,10 @@
 export default class extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {fallOff: 0.9};
+    }
+
     calculateRelativeProgress(from,to,progress){
         return 100/(to-from)*(progress-from);
     }
@@ -10,12 +15,15 @@ export default class extends React.Component {
 
     render(){
         const sign = this.props.inverted ? '' : '-';
-        let styles = {transform: 'translateY(' + sign + '110%)'};
+        let styles = {transform: 'translateY(' + sign + '100vh)'};
         if(this.props.progress > this.props.start && this.props.progress < this.props.end){
             let relativeProgress = this.calculateInvertedRelativeProgress(this.props.start, this.props.end, this.props.progress);
-            styles = {transform: 'translateY(' + sign + relativeProgress + '%)'}
-        }else if(this.props.progress > this.props.end){
+            styles = {transform: 'translateY(' + sign + relativeProgress + 'vh)'}
+        }else if(this.props.progress > this.props.end && this.props.progress < this.state.fallOff){
             styles = {};
+        }else if(this.props.progress > this.state.fallOff){
+            let relativeProgress = this.calculateRelativeProgress(0.9, 1, this.props.progress);
+            styles = {transform: 'translateY(' + sign + relativeProgress + 'vh)'}
         }
 
         return (

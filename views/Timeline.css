@@ -19,6 +19,7 @@
 }
 
 .timeline {
+    padding-top: 99vh;
 }
 
 .trigger {
@@ -31,4 +32,8 @@
     border-top: 1px solid;
     border-left: 1px solid;
     margin-bottom: 100vh;
+}
+
+.trigger > div:last-child{
+    margin-bottom: 99vh;
 }

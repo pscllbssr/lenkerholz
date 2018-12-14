@@ -23,7 +23,7 @@ export default [
     },
     {
         style: {top: '199vh'},
-        height: 1,
+        height: 1.5,
         id: 'scene10',
         element: (progress) => {
             return <Scene10 id="scene10" key='scene10' progress={progress} />
@@ -39,7 +39,7 @@ export default [
     {
         style: {top: '299vh'},
         id: 'scene11',
-        height: 1,
+        height: 1.5,
         element: (progress) => {
             return <Scene11 id="scene11" progress={progress} />
         }
@@ -47,7 +47,7 @@ export default [
     {
         style: {top: '399vh'},
         id: 'scene12',
-        height: 1,
+        height: 1.5,
         element: (progress) => {
             return <Scene12 id="scene12" progress={progress} />
         }
@@ -55,7 +55,7 @@ export default [
     {
         style: {top: '499vh'},
         id: 'scene20',
-        height: 1,
+        height: 1.5,
         element: (progress) => {
             return <Scene20 id="scene20" progress={progress}/>
         }
@@ -63,7 +63,7 @@ export default [
     {
         style: {top: '599vh'},
         id: 'scene21',
-        height: 1,
+        height: 1.5,
         element: (progress) => {
             return <Scene21 id="scene21" progress={progress}/>
         }
@@ -71,7 +71,7 @@ export default [
     {
         style: {top: '699vh'},
         id: 'scene22',
-        height: 1,
+        height: 1.5,
         element: (progress) => {
             return <Scene22 id="scene22" progress={progress} />
         }
@@ -79,7 +79,7 @@ export default [
     {
         style: {top: '799vh'},
         id: 'scene23',
-        height: 1,
+        height: 1.5,
         element: (progress) => {
             return <Scene23 id="scene23" progress={progress}/>
         }
@@ -87,7 +87,7 @@ export default [
     {
         style: {top: '899vh'},
         id: 'scene30',
-        height: 1,
+        height: 1.5,
         element: (progress) => {
             return <Scene30 id="scene30" progress={progress} /> }
     }, 
@@ -102,7 +102,7 @@ export default [
     {
         style: {top: '1099vh'},
         id: 'scene32',
-        height: 1,
+        height: 1.5,
         element: (progress) => {
             return <Scene32 id="scene32" progress={progress} />
         }
@@ -110,13 +110,13 @@ export default [
     {
         style: {top: '1199vh'},
         id: 'scene33',
-        height: 1,
+        height: 1.5,
         element: (progress) => { return <Scene33 id="scene33" progress={progress} /> }
     }, */
     {
         style: {top: '1299vh'},
         id: 'scene98',
-        height: 1,
+        height: 1.5,
         element: (progress) => {
             return <Summary id="scene98" progress={progress} />
         }
@@ -124,7 +124,7 @@ export default [
     {
         style: {top: '1399vh'},
         id: 'scene99',
-        height: 1,
+        height: 1.5,
         element: (progress) => {
             return <Contact id="scene99" progress={progress}/>
         }
