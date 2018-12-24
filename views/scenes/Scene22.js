@@ -27,8 +27,9 @@ export default class extends React.Component {
                             className=''>Your browser does not support SVGs
                     </object>
                 </FallDown>
+                <h1 class="Kategorie">Investition in die lokale Wirtschaft</h1>
                 <PinParallax className='text' progress={this.props.progress} in={0.2} out={0.8}>
-                    <h2>Investition in die lokale Wirtschaft</h2>
+                    
 
                     <h3>Holzverarbietung</h3>
                     Durch die Unterstützung von Lenker Holz ermöglichen sie den Sägereien, Hand in Hand mit den Transportunternehmen zu arbeiten. Die frisch geschlagenen Stämme werden dort zu unterschiedlichsten Holz-Variationen verarbeitet. Später werden sie an verschiedene Zimmereien, Schreinereibetriebe und Möbelfirmen rund um den Raum Adelboden - Lenk geliefert.

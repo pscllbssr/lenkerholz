@@ -23,21 +23,21 @@ export default class extends React.Component {
                             <object type="image/svg+xml" data="/static/summary/Summary01.svg"
                                 className='icon'>Your browser does not support SVGs
                             </object>
-                            <h3>Waldpflege</h3>
+                            <h2>Waldpflege</h2>
                             <p>Hält den Lenker Wald fit und gesund</p>
                         </div>
                         <div className="summary-icon">
                             <object type="image/svg+xml" data="/static/summary/Summary02.svg"
                                 className='icon'>Your browser does not support SVGs
                             </object>
-                            <h3>Holzwirtschaft</h3>
+                            <h2>Holzwirtschaft</h2>
                             <p>Schafft Arbeitsplätze und unterstützt die lokale Wirtschaft</p>
                         </div>
                         <div className="summary-icon">
                             <object type="image/svg+xml" data="/static/summary/Summary03.svg"
                                 className='icon'>Your browser does not support SVGs
                             </object>
-                            <h3>Ökologie</h3>
+                            <h2>Ökologie</h2>
                             <p>Ist nachhaltig</p>
                         </div>
                     </div>

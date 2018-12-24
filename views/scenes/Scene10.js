@@ -29,9 +29,10 @@ export default class extends React.Component {
                             className=''>Your browser does not support SVGs
                     </object>
                 </FallDown>
-
+                <h1 class="Kategorie">Waldpflege</h1>
                 <PinParallax className='text' progress={this.props.progress} in={0.2} out={0.8}>
-                        <h2>Waldpflege</h2>
+                        
+                        
                         <h3>Der Wald nimmt eine Schutzfunktion ein</h3>
                         Beinahe 90% der Waldfläche der Gemeinde Lenk ist als Schutzwald beschrieben und benötigt eine
                         nachhaltige, intensive Pflege. <br></br>
@@ -44,6 +45,7 @@ export default class extends React.Component {
                             <li>50ha Steinschlagschutzwald (2.5%)</li>
                             <li>3ha Rutschschutzwald (0.15%)</li>
                         </ul>
+                       
                 </PinParallax>
 
 

@@ -34,9 +34,9 @@ export default class extends React.Component {
                         SVGs
                     </object>
                 </PopIn>
-
+                <h1 class="Kategorie">Waldpflege</h1>
                 <PinParallax className='text' progress={this.props.progress} in={0.2} out={0.8}>
-                    <h2>Waldpflege</h2>
+                    
                     <h3>Wohlfahrts- und Nutzfunktion</h3>
                     Neben seiner Schutzfunktion dient der Wald auch als Lebensraum für zahlreiche einheimische Tiere und
                     Pflanzen. Er bildet eine naturnahe Lebensgemeinschaft und bietet ein natürliches Erholungsgebiet.

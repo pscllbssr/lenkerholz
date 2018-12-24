@@ -22,8 +22,10 @@ export default class extends React.Component {
                             className=''>Your browser does not support SVGs
                     </object>
                 </FallDown>
+            
+                <h1 class="Kategorie">Investition in die lokale Wirtschaft</h1>
                 <PinParallax className='text' progress={this.props.progress} in={0.2} out={0.8}>
-                    <h2>Investition in die lokale Wirtschaft</h2>
+                    
                     <h3>Forstwirtschaft</h3>
                     Die Bäume werden durch genaue Untersuchung gekennzeichnet und durch speziell ausgebildetes Personal
                     geschlagen. Das ist nur einer der Gründe, warum die einheimische Waldwirtschaft vor grossen

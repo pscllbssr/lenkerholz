@@ -37,9 +37,9 @@ export default class extends React.Component {
                             className=''>Your browser does not support SVGs
                     </object>
                 </FallDown>
-
+                <h1 class="Kategorie">Waldpflege</h1>
                 <PinParallax className='text' progress={this.props.progress} in={0.2} out={0.8}>
-                    <h2>Waldpflege</h2>
+                    
                     <h3>Eine aktive Bewirtschaftung wird benötigt</h3>
                     Damit der Wald diese Funktionen erbringen kann, ist eine aktive Bewirtschaftung und Pflege
                     erforderlich. Diese stellt sicher, dass der Wald in seiner Fläche und in seiner räumlichen

@@ -15,7 +15,8 @@ export default class extends React.Component {
                           inverted={false}>
                     <div className="visible logogrid">
                         <img id="logo" src="../static/img/logo.png"></img>
-                        <h1 id="logoText">Lenker Holz</h1>
+                        <h1 id="logoHeading">Lenker Holz</h1>
+                        <h2 id="logoText">natürlicher Halt</h2>
                     </div>
                 </FallDown>
 

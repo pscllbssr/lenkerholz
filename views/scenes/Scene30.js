@@ -46,9 +46,9 @@ export default class extends React.Component {
                     </div>
 
                 </Tween>
-
+                <h1 class="Kategorie">Ökologie</h1>
                 <PinParallax className='text' progress={this.props.progress} in={0.2} out={0.8}>
-                    <h2>Ökologie</h2>
+                    
                     <p>{this.value}</p>
                     <h3>Weniger Treibhausgase</h3>
                     Der Transport von Holz erzeugt, je nach Transportweg, einen grossen Teil des ausgestossenen

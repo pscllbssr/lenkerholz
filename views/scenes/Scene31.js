@@ -46,9 +46,9 @@ export default class extends React.Component {
                             className='scene__background'>Your browser does not support SVGs
                     </object>
                 </FallDown>
-
+                <h1 class="Kategorie">Ökologie</h1>
                 <PinParallax className='text' progress={this.props.progress} in={0.2} out={0.8}>
-                    <h2>Ökologie</h2>
+                    
 
                     <h3>Mehrere Leben</h3>
                     Holz- und Holzprodukte sind vielseitig einsetzbar - über alle Stadien hinweg
