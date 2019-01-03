@@ -19,7 +19,8 @@
     "react-dom": "^16.5.2",
     "react-gsap": "^1.0.16",
     "react-scroll-trigger": "^0.3.7",
-    "react-scrollmagic": "^2.0.0"
+    "react-scrollmagic": "^2.0.0",
+    "scrollprogress": "^3.0.2"
   },
   "devDependencies": {},
   "repository": {

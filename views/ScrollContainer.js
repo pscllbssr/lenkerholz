@@ -2,6 +2,7 @@ import './ScrollContainer.css';
 import './Scene.css';
 import './Timeline.css';
 import ScrollTrigger from 'react-scroll-trigger';
+import ScrollProgress from 'scrollprogress';
 import * as React from "react";
 
 
@@ -36,9 +37,29 @@ export default class extends React.Component {
         });
     }
 
+    componentDidMount() {
+        this.progressObserver = new ScrollProgress((x, y) => {
+            this.setState({ totalProgress: y * 100 });
+        });
+    }
+
+    componentWillUnmount() {
+        this.progressObserver.destroy();
+    }
+
     render() {
 
+
+        let progressStyle = {
+            width: `${this.state.totalProgress}%`
+        };
+
+        let progressMenu = this.props.scenes.map((scene) =>
+            <div className='progress-menu__item' style={{'width': (scene.height*10) + 'vw'}}></div>
+        );
+
         let fullScreenStyle = {};
+
         if (this.state.transparent)
             fullScreenStyle = {opacity: 0.5};
 
@@ -58,6 +79,11 @@ export default class extends React.Component {
 
         return (
             <div className="app">
+                <div class="progress-bar" style={progressStyle}>
+                </div>
+                <div className={'progress-menu'}>
+                    {progressMenu}
+                </div>
                 <div className='progress' style={{width: this.state.progress * 100 + 'vw'}}>&nbsp;</div>
                 <button onClick={this.toggleTimeline.bind(this)} className='timeline-toggler'>Toggle Timeline</button>
                 <section className="full-screen" style={fullScreenStyle}>
