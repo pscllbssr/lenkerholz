@@ -46,7 +46,7 @@ export default class extends React.Component {
                     </div>
 
                 </Tween>
-                <h1 class="Kategorie">Ökologie</h1>
+                <h1 className="Kategorie">Ökologie</h1>
                 <PinParallax className='text' progress={this.props.progress} in={0.2} out={0.8}>
                     
                     <p>{this.value}</p>

@@ -37,7 +37,7 @@ export default class extends React.Component {
                             className=''>Your browser does not support SVGs
                     </object>
                 </FallDown>
-                <h1 class="Kategorie">Waldpflege</h1>
+                <h1 className="Kategorie">Waldpflege</h1>
                 <PinParallax className='text' progress={this.props.progress} in={0.2} out={0.8}>
                     
                     <h3>Eine aktive Bewirtschaftung wird benötigt</h3>

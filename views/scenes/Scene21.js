@@ -28,7 +28,7 @@ export default class extends React.Component {
                             className=''>Your browser does not support SVGs
                     </object>
                 </FallDown>
-                <h1 class="Kategorie">Investition in die lokale Wirtschaft</h1>
+                <h1 className="Kategorie">Investition in die lokale Wirtschaft</h1>
                 <PinParallax className='text' progress={this.props.progress} in={0.2} out={0.8}>
                     
 
