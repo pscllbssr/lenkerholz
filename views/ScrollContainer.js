@@ -79,13 +79,13 @@ export default class extends React.Component {
 
         return (
             <div className="app">
-                <div class="progress-bar" style={progressStyle}>
+                <div className="progress-bar" style={progressStyle}>
                 </div>
                 <div className={'progress-menu'}>
                     {progressMenu}
                 </div>
                 <div className='progress' style={{width: this.state.progress * 100 + 'vw'}}>&nbsp;</div>
-                <button onClick={this.toggleTimeline.bind(this)} className='timeline-toggler'>Toggle Timeline</button>
+                <button onClick={this.toggleTimeline.bind(this)} className='timeline-toggler' style={{display: 'none'}}>Toggle Timeline</button>
                 <section className="full-screen" style={fullScreenStyle}>
                     <div className="animation">
                         {scenarios}
